@@ -1,0 +1,282 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "sections"
+    ],
+    "properties": {
+        "sections": {
+            "type": "array",
+            "default": [],
+            "title": "The sections Schema",
+            "items": {
+                "type": "object",
+                "default": {},
+                "title": "A Schema",
+                "required": [
+                    "name",
+                    "questions"
+                ],
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The name Schema",
+                        "examples": [
+                            "abc"
+                        ]
+                    },
+                    "questions": {
+                        "type": "array",
+                        "default": [],
+                        "title": "The questions Schema",
+                        "items": {
+                            "type": "object",
+                            "title": "A Schema",
+                            "required": [
+                                "id",
+                                "type",
+                                "prompt",
+                                "controller",
+                                "optional",
+                                "default"
+                            ],
+                            "properties": {
+                                "id": {
+                                    "type": "string",
+                                    "title": "The id Schema",
+                                    "examples": [
+                                        "foobar",
+                                        "baz"
+                                    ]
+                                },
+                                "type": {
+                                    "type": "string",
+                                    "title": "The type Schema",
+                                    "examples": [
+                                        "text"
+                                    ]
+                                },
+                                "prompt": {
+                                    "type": "string",
+                                    "title": "The prompt Schema",
+                                    "examples": [
+                                        "what is the question",
+                                        "this is the question"
+                                    ]
+                                },
+                                "controller": {
+                                    "type": "boolean",
+                                    "title": "The controller Schema",
+                                    "examples": [
+                                        false
+                                    ]
+                                },
+                                "optional": {
+                                    "type": "boolean",
+                                    "title": "The optional Schema",
+                                    "examples": [
+                                        false
+                                    ]
+                                },
+                                "default": {
+                                    "type": "string",
+                                    "title": "The default Schema",
+                                    "examples": [
+                                        "value"
+                                    ]
+                                },
+                                "placeholder": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The placeholder Schema",
+                                    "examples": [
+                                        "sample"
+                                    ]
+                                },
+                                "constraint": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The constraint Schema",
+                                    "examples": [
+                                        "regex"
+                                    ]
+                                },
+                                "options": {
+                                    "type": "array",
+                                    "default": [],
+                                    "title": "The options Schema",
+                                    "items": {
+                                        "type": "object",
+                                        "default": {},
+                                        "title": "A Schema",
+                                        "required": [
+                                            "name",
+                                            "value"
+                                        ],
+                                        "properties": {
+                                            "name": {
+                                                "type": "string",
+                                                "default": "",
+                                                "title": "The name Schema",
+                                                "examples": [
+                                                    "blah"
+                                                ]
+                                            },
+                                            "value": {
+                                                "type": "string",
+                                                "default": "",
+                                                "title": "The value Schema",
+                                                "examples": [
+                                                    "wow"
+                                                ]
+                                            }
+                                        },
+                                        "examples": [{
+                                            "name": "blah",
+                                            "value": "wow"
+                                        }]
+                                    },
+                                    "examples": [
+                                        [{
+                                            "name": "blah",
+                                            "value": "wow"
+                                        }]
+                                    ]
+                                }
+                            },
+                            "examples": [{
+                                "id": "foobar",
+                                "type": "text",
+                                "prompt": "what is the question",
+                                "controller": false,
+                                "optional": false,
+                                "default": "value",
+                                "placeholder": "sample",
+                                "constraint": "regex"
+                            },
+                            {
+                                "id": "baz",
+                                "type": "text",
+                                "prompt": "this is the question",
+                                "controller": false,
+                                "optional": false,
+                                "default": "value",
+                                "options": [{
+                                    "name": "blah",
+                                    "value": "wow"
+                                }]
+                            }]
+                        },
+                        "examples": [
+                            [{
+                                "id": "foobar",
+                                "type": "text",
+                                "prompt": "what is the question",
+                                "controller": false,
+                                "optional": false,
+                                "default": "value",
+                                "placeholder": "sample",
+                                "constraint": "regex"
+                            },
+                            {
+                                "id": "baz",
+                                "type": "text",
+                                "prompt": "this is the question",
+                                "controller": false,
+                                "optional": false,
+                                "default": "value",
+                                "options": [{
+                                    "name": "blah",
+                                    "value": "wow"
+                                }]
+                            }]
+                        ]
+                    }
+                },
+                "examples": [{
+                    "name": "abc",
+                    "questions": [{
+                        "id": "foobar",
+                        "type": "text",
+                        "prompt": "what is the question",
+                        "controller": false,
+                        "optional": false,
+                        "default": "value",
+                        "placeholder": "sample",
+                        "constraint": "regex"
+                    },
+                    {
+                        "id": "baz",
+                        "type": "text",
+                        "prompt": "this is the question",
+                        "controller": false,
+                        "optional": false,
+                        "default": "value",
+                        "options": [{
+                            "name": "blah",
+                            "value": "wow"
+                        }]
+                    }]
+                }]
+            },
+            "examples": [
+                [{
+                    "name": "abc",
+                    "questions": [{
+                        "id": "foobar",
+                        "type": "text",
+                        "prompt": "what is the question",
+                        "controller": false,
+                        "optional": false,
+                        "default": "value",
+                        "placeholder": "sample",
+                        "constraint": "regex"
+                    },
+                    {
+                        "id": "baz",
+                        "type": "text",
+                        "prompt": "this is the question",
+                        "controller": false,
+                        "optional": false,
+                        "default": "value",
+                        "options": [{
+                            "name": "blah",
+                            "value": "wow"
+                        }]
+                    }]
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "sections": [{
+            "name": "abc",
+            "questions": [{
+                "id": "foobar",
+                "type": "text",
+                "prompt": "what is the question",
+                "controller": false,
+                "optional": false,
+                "default": "value",
+                "placeholder": "sample",
+                "constraint": "regex"
+            },
+            {
+                "id": "baz",
+                "type": "text",
+                "prompt": "this is the question",
+                "controller": false,
+                "optional": false,
+                "default": "value",
+                "options": [{
+                    "name": "blah",
+                    "value": "wow"
+                }]
+            }]
+        }]
+    }]
+}

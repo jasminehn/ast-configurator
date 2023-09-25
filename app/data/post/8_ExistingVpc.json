@@ -1,0 +1,92 @@
+{
+  "questions": [
+    {
+      "id": "VPCCIDR",
+      "type": "text",
+      "placeholder": "0.0.0.0/0",
+      "constraint": "^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\\/(1[6-9]|2[0-8]))$",
+      "controller": false,
+      "optional": false,
+      "prompt": "CIDR block for the VPC.",
+      "default": "10.0.0.0/16"
+    },
+    {
+      "id": "AccessSgID",
+      "type": "text",
+      "placeholder": "sg-abc123",
+      "controller": false,
+      "optional": false,
+      "prompt": "If you're deploying into an existing VPC, fill in the ID of the preconfigured security group to control access to the Application Load Balancer.",
+      "default": ""
+    },
+    {
+      "id": "VpcId",
+      "type": "text",
+      "placeholder": "vpc-abc123",
+      "controller": false,
+      "optional": false,
+      "prompt": "If you're deploying into an existing VPC, fill in the VPC ID.",
+      "default": ""
+    },
+    {
+      "id": "RemoteAccessCIDR",
+      "type": "text",
+      "placeholder": "0.0.0.0/0",
+      "constraint": "^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\\/([0-9]|[1-2][0-9]|3[0-2]))$",
+      "controller": false,
+      "optional": false,
+      "prompt": "CIDR IP range that is permitted to access the instances. Set this value to a trusted IP range.",
+      "default": ""
+    },
+    {
+      "id": "PublicSubnet1ID",
+      "type": "text",
+      "placeholder": "sn-pub-1",
+      "controller": false,
+      "optional": false,
+      "prompt": "If you're deploying into an existing VPC, fill in the ID of the public subnet in Availability Zone 1",
+      "default": "" 
+    },
+    {
+      "id": "PublicSubnet2ID",
+      "type": "text",
+      "placeholder": "sn-pub-2",
+      "controller": false,
+      "optional": false,
+      "prompt": "If you're deploying into an existing VPC, fill in the ID of the public subnet in Availability Zone 2.",
+      "default": "" 
+    },
+    {
+      "id": "PrivateSubnet1AID",
+      "type": "text",
+      "placeholder": "sn-prv-1a",
+      "controller": false,
+      "optional": false,
+      "prompt": "If you're deploying into an existing VPC, fill in the ID of the private subnet in Availability Zone 1.",
+      "default": "" 
+    },
+    {
+      "id": "PrivateSubnet1BID",
+      "type": "text",
+      "placeholder": "sn-prv-1b",
+      "controller": false,
+      "optional": false,
+      "prompt": "If you're deploying into an existing VPC, fill in the ID of the private subnet in Availability Zone 2.",
+      "default": "" 
+    },
+    {
+      "id": "PrivateSubnet1CID",
+      "type": "text",
+      "placeholder": "sn-prv-1c",
+      "controller": false,
+      "optional": false,
+      "prompt": "If you're deploying into an existing VPC, fill in the ID of the private subnet in Availability Zone 3.",
+      "default": "" 
+    }
+  ],
+  "conditions": [{
+    "question": "0.DeployVpc",
+    "is": "==",
+    "to": "false"
+  }]
+}

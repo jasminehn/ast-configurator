@@ -1,0 +1,110 @@
+.globalFooter{
+    width: 100%;
+    height: 600px;
+    background: #000000;
+    color: white;
+}
+.footerWrapper{
+    display: flex;
+    flex-direction: column;
+    /* gap: 35px; */
+    padding: 60px;
+    width: 100%;
+}
+.footerWrapper .nasaLogo img{
+    width: 80px;
+}
+.footerLinksWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+.footerLinksWrapper.group1 li{
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.5s ease;
+    
+}
+.footerLinksWrapper.group1 li:hover{
+    color: #959599;
+    
+}
+.footerLinksWrapper.group1 .footerLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.nasaInfo{
+    width: 400px;
+    gap: 0px!important;
+    margin: 0!important;
+}
+.footerLinks{
+    list-style-type: none;
+    padding-left: 0;
+}
+.description{
+    margin: 0;
+    font-size: 15px;
+}
+.footerLinks .arrowRight{
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+.footerLinks .socials{
+    color: #959599;
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+.footerLinks .socials .socialLinks{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.footerLinks .socials .socialLinks .linkIcon{
+    background-color: #2E2E32;
+    border-radius: 50%;
+    padding: 4px;
+
+    cursor: pointer;
+    transition: 0.5s ease background;
+}
+.footerLinks .socials .socialLinks .linkIcon:hover{
+    background-color: #959599;
+}
+/* .footerWrapper hr{
+    background-color: #2E2E32;
+    height: 1px;
+    border: none; 
+} */
+.footerLinksWrapper.group2 .footerLinks{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+.footerLinksWrapper.group2 li{
+    color: #D1D1D1;
+    cursor: pointer;
+}
+.footerLinksWrapper.group3{
+    color: #959599;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 60px;
+}
+.liveThing{
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 2px 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: normal;
+}

@@ -1,0 +1,18 @@
+{
+  "questions": [
+    {
+      "id": "SSLCertificateArn",
+      "type": "text",
+      "placeholder": "ARN",
+      "controller": false,
+      "optional": true,
+      "prompt": "(Optional) Amazon Resource Name of the SSL certificate to use for the load balancer. Use SSLCertificateArn if you are not using FQDN and HostedZoneID.",
+      "default": ""
+    }
+  ],
+  "conditions": [{
+    "question": "1.FQDN",
+    "is": "==",
+    "to": ""
+  }]
+}

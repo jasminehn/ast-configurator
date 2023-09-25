@@ -1,0 +1,36 @@
+{
+    "software": [
+        {
+            "id": "AIT",
+            "name": "AMMOS Instrument Toolkit (AIT)",
+            "description": {
+                "text": "An easy-to-install, easy-to- operate suite of tools for operating instruments and small satellites. AIT provides commanding and simple sequencing, telemetry processing including limits, unit conversions, plots, archive, and query capabilities, powerful scripting with Python, and modern web- based user interfaces supporting desktop, tablets, and smartphones. Instrument teams, missions with simple spacecraft, missions with small budgets, missions with inexperienced operators, missions operating at Earth, the Moon, at Lagrange points, or in Deep Space would all benefit from the AIT solution.\n\nNTR/NPO No. 50696 \n\nComment: \n1) AIT supports uplink and downlink to NASA's Deep Space Network (DSN) using the CCSDS Space Link Extension (SLE) protocol; \n2) AIT has been open-sourced and released at https://github.com/NASA-AMMOS."
+            },
+            "conditions": []
+        },
+        {
+            "id": "OpenMCT",
+            "name": "Open Mission Control (MCT)",
+            "description": {
+                "text": "Client software that is designed to work with the Mission Control Web Service (MCWS) to enable flexible interactive display and analysis of telemetry information. VISTA provides composable displays specialized for telemetry information including historical and realtime data for Channels, Event Records, Data Products, and Dictionaries. It allows users to create and save layouts developed during analysis as well as shared subsystem displays pre-configured for operations. \n\nNTR/NPO No. ARC-15256-1D (Open MCT - See Comment) \n\nDependencies: \n3.2.1-1 AMMOS Mission Data Processing and Control System (AMPCS), 3.2.1-2 Mission Control Web Service (MCWS), Open MCT (see Comment) \n\nComment: \nVISTA is an application built on top of Open MCT, which is a mission control framework for visualization of data on desktop and mobile devices. It is developed at NASA's Ames Research Center in Silicon Valley, in collaboration with the JPL. As a generalizable and open source framework, Open MCT could be used as the basis for building applications for planning, operation, and analysis of any systems producing telemetry data. Open MCT is available on NASA's GitHub repository at https://github.com/nasa/openmct."
+            },
+            "conditions": [{
+                "question": "pre1.1",
+                "is": "==",
+                "to": "yes"
+            }]
+        },
+        {
+            "id": "Merlin",
+            "name": "Merlin (Aerie activity planning)",
+            "description": {
+                "text": "Aerie is an extensible software system that provides mission planning, activity planning, and sequence capabilities. It provides simulation, constraint checking, and timeline visualization for both planning and sequencing operations processes. For planning, it also provides rules- based activity scheduling. Missions are responsible for defining activities, commands, and models that represent their flight and ground systems."
+            },
+            "conditions": [{
+                "question": "pre1.2",
+                "is": "==",
+                "to": "yes"
+            }]
+        }
+    ]
+}

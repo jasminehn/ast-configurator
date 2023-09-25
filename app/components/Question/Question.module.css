@@ -1,0 +1,83 @@
+.prompt {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    white-space: pre-wrap;
+    
+    /* identical to box height, or 24px */
+    margin: 16px 0px 8px 8px;
+    letter-spacing: -0.011em;
+    
+    color: rgba(0, 0, 0, 0.8);
+
+}
+
+.wrapper {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+    width: 100%;
+    height: 100%;
+}
+
+.label {
+    /* label */
+
+    height: 24px;
+
+    /* Body 1 */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    line-height: 24px;
+
+    /* identical to box height, or 150% */
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.radiogroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    height: 100%;
+    margin-bottom: 4px;
+    padding-left: 8px
+}
+
+.disabled {
+    opacity: 0.2
+}
+
+.index {
+    margin: 16px 16px 16px 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    /* border-top: #C2C2C2 1px solid; */
+    align-items: flex-start;
+    padding: 5px 0px 5px 0px;
+    margin-bottom: 8px; 
+}
+
+.error {
+    color: red;
+    margin: 0px 0px 0.5rem 0px;
+}

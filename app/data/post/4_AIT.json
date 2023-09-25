@@ -1,0 +1,58 @@
+{
+  "questions": [
+    {
+      "id": "AITInstanceType",
+      "type": "dropdown",
+      "options": [
+        {
+          "name": "t3.medium",
+          "value": "t3.medium"
+        },
+        {
+          "name": "t3.large",
+          "value": "t3.large"
+        },
+        {
+          "name": "t3.xlarge",
+          "value": "t3.xlarge"
+        },
+        {
+          "name": "m5.large",
+          "value": "m5.large"
+        },
+        {
+          "name": "m5.xlarge",
+          "value": "m5.xlarge"
+        }
+      ],
+      "controller": false,
+      "optional": false,
+      "prompt": "Instance type to be used for AIT. See deployment guide for recommendations.",
+      "default": "m5.large"
+    },
+    {
+      "id": "CloudWatchLogsRetentionPeriod",
+      "type": "text",
+      "placeholder": "Days",
+      "controller": false,
+      "optional": true,
+      "prompt": "Number of days to retain log events in CloudWatch Logs log groups. Increasing this number results in higher log-storage costs.",
+      "default": "30",
+      "constraint": "^[0-9]*$"
+    },
+    {
+      "id": "KeyPairName",
+      "type": "text",
+      "placeholder": "Name",
+      "controller": false,
+      "optional": false,
+      "prompt": "Name of the key pair that you will use to connect securely to your instance after it launches.",
+      "default": ""
+    }
+  ],
+  "conditions": [{
+    "question": "_SELECT",
+    "is": "includes",
+    "to": "AIT"
+  }]
+}

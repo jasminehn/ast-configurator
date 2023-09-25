@@ -1,0 +1,23 @@
+.footer {
+    /* position: fixed; */
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    direction: row;
+    align-items: center;
+    padding: 32px 128px 32px 128px; 
+}
+
+.footer > :first-child {
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+
+.footer > :last-child {
+    justify-self: right;
+    margin: 8px;
+}

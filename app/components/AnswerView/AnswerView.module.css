@@ -1,0 +1,21 @@
+.container {
+    border-top: #C2C2C2 1px solid;
+    align-items: flex-start;
+    padding: 5px 0px 5px 0px;
+}
+
+.h5 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 24px 32px 0px 32px; 
+}
+
+.answer {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 8px 32px 24px 32px;
+}

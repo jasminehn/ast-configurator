@@ -1,0 +1,18 @@
+{
+  "questions": [
+    {
+      "id": "HostedZoneID",
+      "type": "text",
+      "placeholder": "ID",
+      "controller": false,
+      "optional": true,
+      "prompt": "(Optional) ID of the Route 53 hosted-zone domain. If you fill in both FQDN and HostedZoneID, this deployment generates an ACM certificate.",
+      "default": ""
+    }
+  ],
+  "conditions": [{
+    "question": "1.FQDN",
+    "is": "!=",
+    "to": ""
+  }]
+}

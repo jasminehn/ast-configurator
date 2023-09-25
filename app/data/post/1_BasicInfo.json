@@ -1,0 +1,26 @@
+{
+  "questions": [
+    {
+      "id": "ProjectName",
+      "prompt": "Name of your project. Please use lowercase alphanumeric characters and hypens (-) only.",
+      "type": "text",
+      "default": "",
+      "controller": false,
+      "optional": false,
+      "constraint": "^[0-9a-z-]*$",
+      "placeholder": "Project Name",
+      "error": "The ProjectName can include numbers, lowercase letters, and hyphens (-)."
+    },
+    {
+      "id": "FQDN",
+      "prompt": "URL to use for the project-resources root.",
+      "type": "text",
+      "default": "",
+      "controller": true,
+      "optional": true,
+      "constraint": "^(?!://)(?=.{1,255}$)((.{1,63}\\.){1,127}(?![0-9]*$)[a-z0-9-]+\\.?)$",
+      "placeholder": "fqdn"
+    }
+  ],
+  "conditions": []
+}

@@ -1,0 +1,91 @@
+{
+  "questions": [
+    {
+      "id": "AvailabilityZones",
+      "type": "text",
+      "placeholder": "Zones",
+      "controller": false,
+      "optional": false,
+      "prompt": "Availability Zones to use for the subnets in the VPC. This deployment uses three Availability Zones, and the logical order of your selections is preserved. Separate zones by commas",
+      "default": "",
+      "constraint": "^[0-9a-z-]+,[0-9a-z-]+,[0-9a-z-]+$",
+      "error": "Separate zones by commas (ex. us-east-1a,us-east-1b,us-east-1c)"
+    },
+    {
+      "id": "PrivateSubnet1CIDR",
+      "type": "text",
+      "placeholder": "CIDR",
+      "constraint": "^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\\/(1[6-9]|2[0-8]))$",
+      "controller": false,
+      "optional": false,
+      "prompt": "CIDR block used for the private subnet located in Availability Zone 1.",
+      "default": "10.0.128.0/24"
+    },
+    {
+      "id": "PrivateSubnet2CIDR",
+      "type": "text",
+      "placeholder": "CIDR",
+      "constraint": "^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\\/(1[6-9]|2[0-8]))$",
+      "controller": false,
+      "optional": false,
+      "prompt": "CIDR block used for the private subnet located in Availability Zone 2.",
+      "default": "10.0.192.0/24"
+    },
+    {
+      "id": "PrivateSubnet3CIDR",
+      "type": "text",
+      "placeholder": "CIDR",
+      "constraint": "^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\\/(1[6-9]|2[0-8]))$",
+      "controller": false,
+      "optional": false,
+      "prompt": "CIDR block used for the private subnet located in Availability Zone 3.",
+      "default": "10.0.200.0/24"
+    },
+    {
+      "id": "RemoteAccessCIDR",
+      "type": "text",
+      "placeholder": "CIDR",
+      "constraint": "^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\\/([0-9]|[1-2][0-9]|3[0-2]))$",
+      "controller": false,
+      "optional": false,
+      "prompt": "CIDR IP range that is permitted to access the instances. Set this value to a trusted IP range.",
+      "default": "",
+      "error": "Please provide a valid value (ex. 192.168.0.1/24)"
+    },
+    {
+      "id": "PublicSubnet1CIDR",
+      "type": "text",
+      "placeholder": "CIDR",
+      "constraint": "^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\\/(1[6-9]|2[0-8]))$",
+      "controller": false,
+      "optional": false,
+      "prompt": "CIDR block used for the public subnet located in Availability Zone 1.",
+      "default": "10.0.32.0/24"
+    },
+    {
+      "id": "PublicSubnet2CIDR",
+      "type": "text",
+      "placeholder": "CIDR",
+      "constraint": "^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\\/(1[6-9]|2[0-8]))$",
+      "controller": false,
+      "optional": false,
+      "prompt": "CIDR block used for the public subnet located in Availability Zone 2.",
+      "default": "10.0.64.0/24"
+    },
+    {
+      "id": "PublicSubnet3CIDR",
+      "type": "text",
+      "placeholder": "CIDR",
+      "constraint": "^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\\/(1[6-9]|2[0-8]))$",
+      "controller": false,
+      "optional": false,
+      "prompt": "CIDR block used for the public subnet located in Availability Zone 3.",
+      "default": "10.0.70.0/24"
+    }
+  ],
+  "conditions": [{
+    "question": "0.DeployVpc",
+    "is": "==",
+    "to": "true"
+  }]
+}

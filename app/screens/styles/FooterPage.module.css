@@ -1,0 +1,262 @@
+/*
+    page.css
+    Styles imported and used for pages w/ footers
+*/
+
+.container {
+    margin: 170px 128px 88px 128px;
+}
+
+.header {
+    /* H2 */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+
+    /* identical to box height, or 110% */
+    letter-spacing: -0.01em;
+
+    color: #000000;
+
+    margin: 0px 0px 24px 0px;
+
+}
+
+.content {
+    /* height: calc(100vh - 132px - 88px - 40px - 24px); */
+    overflow-y: auto;
+}
+
+/*----------------- PROGRESS BAR ------------------*/
+.progressBar{
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    margin-bottom: 30px;
+}
+.progressBar h2{
+    font-size: 30px;
+}
+.progressBarWrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+.barPartWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+.barPartWrapper > * {
+    margin-top: 0;
+}
+.barPartWrapper hr{
+    background-color: #bdbdbd;
+    height: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.steps{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+.steps hr{
+    /* width: 50%; */
+    flex: 1;
+}
+.steps .completed{
+    background-color: #7191D1;
+}
+.steps .current{
+    background-color: #2B3F8A;
+}
+
+/*----------------- Finish page ------------------*/
+.messageWrapper{
+    /* border: 1px solid #47DA84; */
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.messageWrapper h1{
+    font-size: 50px;
+    font-weight: normal;
+}
+.messageWrapper p{
+    color: #000000;
+}
+.messageWrapper p a{
+    /* color: #959599; */
+    color: #000000;
+    border-bottom: 1px dashed #959599;
+    opacity: 0.8;
+}
+.deploymentWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.downloadBox{
+    border: 1px solid #d1d1d1;
+    padding: 0 24px;
+}
+.deploymentInfo{
+    margin: 0 40px;
+}
+.deploymentInfo p{
+    font-size: 12px;
+    color: #17171B;
+}
+.fileSize{
+    font-size: 10px;
+    margin-left: 10px;
+}
+.deploymentWrapper .thing{ /*this is to get the download thing all the way to the right*/
+    margin: 0 auto;
+    margin-right: 0;
+}
+.downloadFileWrapper{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 600;
+    align-items: center;
+}
+
+.outputWrapper{
+    display: flex;
+    align-items: center;
+    
+}
+.deploymentContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    /* width: 80%; */
+    margin: auto;
+    padding: 10px;
+    margin-top: 35px;
+}
+.vertLine{
+    border-left: 1px solid rgb(206, 206, 206);
+    height: 300px;
+}
+.outputContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+}
+.textCopyBox{
+    /* border: 2px solid rgb(215, 215, 215); */
+    /* background-color: #eeeeee;
+    padding: 15px;
+    height: 300px;
+    overflow-y: auto; */
+    font-family: DM Mono;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 1.3px;
+    text-align: left;
+    color: #0B3D91;
+}
+.jsonPre{
+    text-wrap: wrap;
+}
+.urlPre{
+    max-width: 450px;
+    white-space: pre-wrap;
+    /*white-space: -moz-pre-wrap;*/ /* for Mozilla */
+    /*white-space: -pre-wrap;*/ /* for Opera 4-6 */
+    /*white-space: -o-pre-wrap;*/ /* for Opera 7 */
+    word-wrap: break-word;  
+}
+.saveButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/*----------------- ICONS ------------------*/
+.checkIcon{
+    background-color: rgb(71,218,132);
+    border-radius: 50%;
+    padding: 4px;
+    margin-right: 4px;
+}
+.fileIcon{
+    
+    background-color: #E3E3E3;
+    /* font-size: 30px; */
+    border-radius: 10%;
+    padding: 10px 13px;
+}
+.downloadIcon{
+    /* background-color: #2B3F8A; */
+    padding: 6px;
+    cursor: pointer;
+}
+.downloadIconContainer {
+    position: relative; 
+    width: 24px; 
+    height: 24px;
+    margin: 0 8px;
+}
+.downloadIconContainer::before {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2B3F8A;
+    border-radius: 50%;
+    z-index: -1;
+}
+/* .arrowRight{
+    background-color: white;
+    border-radius: 50%;
+    
+} */
+.linkArrow{
+    background-color: #58585B;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    /* border: 3px #ffffff solid; */
+    /* margin: 0 3px; */
+}
+.downloadIconContainer {
+    position: relative; 
+    width: 24px; 
+    height: 24px;
+    margin: 0 8px;
+}
+.downloadIconContainer::before {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2B3F8A;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* other */
+.button_container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 40px;
+}

@@ -1,0 +1,27 @@
+.divider {
+    height: 0px;
+
+    /* Lights / Grey 24 */
+    border: 1px solid #C2C2C2;
+}
+
+.ul {
+    padding: 0% 0% 0% 0%;
+}
+
+.header {
+    /* H2 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+
+    /* identical to box height, or 110% */
+    letter-spacing: -0.01em;
+
+    color: #000000;
+
+    margin: 0px 0px 24px 0px;
+
+}

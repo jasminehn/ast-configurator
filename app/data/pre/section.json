@@ -1,0 +1,59 @@
+{
+    "questions": [
+        {
+            "id": "1",
+            "type": "radio",
+            "prompt": "Do you need data visualization?",
+            "controller": false,
+            "optional": false,
+            "default": "yes",
+            "options": [
+                {
+                    "name": "Yes",
+                    "value": "yes"
+                },
+                {
+                    "name": "No",
+                    "value": "no"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "type": "radio",
+            "prompt": "Do you need to perform spacecraft activity planning?",
+            "controller": false,
+            "optional": false,
+            "default": "yes",
+            "options": [
+                {
+                    "name": "Yes",
+                    "value": "yes"
+                },
+                {
+                    "name": "No",
+                    "value": "no"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "type": "radio",
+            "prompt": "Do you need to perform single or sequencing of commands?",
+            "controller": false,
+            "optional": false,
+            "default": "seq",
+            "options": [
+                {
+                    "name": "Single",
+                    "value": "single"
+                },
+                {
+                    "name": "Sequencing",
+                    "value": "seq"
+                }
+            ]
+        }
+    ],
+    "conditions": []
+}

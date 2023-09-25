@@ -1,0 +1,169 @@
+/*.navwrapper{
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    
+    width: 100%;
+    height: 60px;
+    
+}
+
+.ulwrapper{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.liwrapper{
+    margin: 0 10px;
+}
+
+.awrapper{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}*/
+
+/*            HEADER            */
+.wrapper{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.globalHeader{
+    /*position: absolute;*/
+    width: 100%;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    background: #000000;
+    color: white;
+    
+}
+.headerWrapper{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+}
+.headerWrapper .nasaLogo{
+    width: 50%;
+}
+.headerWrapper .nasaLogoImage Image{
+    width: 60px;
+}
+.headerItemWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.headerItemWrapper .itemTitle{
+    font-weight: bold;
+}
+.headerItemWrapper .fa-angle-down{
+    font-size: 10px;
+}
+.headerItemWrapper .fa-angle-down.special{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 2px;
+}
+.searchWrapper{
+    width: 205px;
+    height: 36px;
+    color: #B9B9BB;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    border: 1px solid #2E2E32;
+    padding: 10px;
+    cursor: text;
+
+    transition: 1s ease border;
+}
+.searchWrapper .fa-magnifying-glass{
+    width: 12px;
+    height: 12px;
+}
+.searchWrapper:hover{
+    border: 1px solid #B9B9BB;
+}
+.liveThing{
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 2px 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+/*            NAV            */
+.globalNavbar{
+    width: 100%;
+    height: 40px;
+    
+    background: white;
+    color: #58585B;
+    border-bottom: 1px solid #D1D1D1;
+
+    padding: 0 30px;
+}
+.navbarWrapper{
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 100%;
+    /* width: 60%; */
+}
+.pagesWrapper span{
+    cursor: pointer;
+}
+.pagesWrapper .activePage{
+    color: #000;
+    font-weight: bold;
+}
+.navWrapper{
+    /* text-align: center; */
+}
+.navItemsList{
+    display: flex;
+    flex-direction: row;
+    
+    gap: 25px;
+}
+.navItemsList p{
+    cursor: pointer;
+}
+.navPagesWrapper {
+    opacity: 0;
+    pointer-events: none;
+}
+.icon{
+    font-size: 10px;
+}
+.special{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 2px;
+}

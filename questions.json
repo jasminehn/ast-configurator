@@ -1,0 +1,28 @@
+{
+  "sections": [
+    {
+      "name": "abc",
+      "questions": [
+        {
+          "id": "foobar",
+          "type": "text",
+          "prompt": "what is the question",
+          "controller": false,
+          "optional": false,
+          "default": "value",
+          "placeholder": "sample",
+          "constraint": "regex"
+        },
+        {
+          "id": "baz",
+          "type": "text",
+          "prompt": "this is the question",
+          "controller": false,
+          "optional": false,
+          "default": "value",
+          "options": [{ "name": "blah", "value": "wow" }]
+        }
+      ]
+    }
+  ]
+}

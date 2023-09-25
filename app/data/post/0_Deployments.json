@@ -1,0 +1,114 @@
+{
+  "questions": [
+    {
+      "id": "UseRoute53",
+      "prompt": "How would you like to manage DNS records for your deployment?",
+      "type": "radio",
+      "default": "true",
+      "optional": false,
+      "controller": true,
+      "options": [
+        {
+          "name": "I will manage my own DNS records",
+          "value": "false"
+        },
+        {
+          "name": "Use Route53 to deploy DNS records on my behalf",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "id": "DeployIam",
+      "prompt": "Allow the QuickStart to deploy the required IAM Roles on your behalf. Otherwise, you will need to pre-deploy these IAM resources before launching the QuickStart; see the Deployment Guide for more details",
+      "type": "radio",
+      "default": "true",
+      "optional": false,
+      "controller": true,
+      "options": [
+        {
+          "name": "Yes",
+          "value": "true"
+        },
+        {
+          "name": "No",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "id": "DeployLogging",
+      "prompt": "Deploy centralized logging resources Firehose -> OpenSearch",
+      "type": "radio",
+      "default": "true",
+      "optional": false,
+      "controller": true,
+      "options": [
+        {
+          "name": "Yes",
+          "value": "true"
+        },
+        {
+          "name": "No",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "id": "DeployBastion",
+      "prompt": "Deploy Bastion Host in public subnet",
+      "type": "radio",
+      "default": "true",
+      "optional": false,
+      "controller": true,
+      "options": [
+        {
+          "name": "Yes",
+          "value": "true"
+        },
+        {
+          "name": "No",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "id": "EnableEfsBackups",
+      "prompt": "Enable AWS Backups for EFS",
+      "type": "radio",
+      "default": "true",
+      "optional": false,
+      "controller": true,
+      "options": [
+        {
+          "name": "Yes",
+          "value": "true"
+        },
+        {
+          "name": "No",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "id": "DeployVpc",
+      "type": "radio",
+      "prompt": "Would you like to deploy into an existing VPC or create a new one?",
+      "controller": true,
+      "optional": false,
+      "default": "true",
+      "options": [
+        {
+          "name": "Deploy into an existing VPC",
+          "value": "false"
+        },
+        {
+          "name": "Create a new one",
+          "value": "true"
+        }
+      ]
+    }
+  ],
+  
+  "conditions": []
+}

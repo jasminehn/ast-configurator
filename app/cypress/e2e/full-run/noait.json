@@ -1,0 +1,96 @@
+{
+  "Questions": [
+    {
+      "Label": "UseRoute53",
+      "Value": "true"
+    },
+    {
+      "Label": "DeployIam",
+      "Value": "true"
+    },
+    {
+      "Label": "DeployLoggings",
+      "Value": "true"
+    },
+    {
+      "Label": "DeployBastion",
+      "Value": "true"
+    },
+    {
+      "Label": "EnableEfsBackups",
+      "Value": "true"
+    },
+    {
+      "Label": "DeployVpc",
+      "Value": "true"
+    },
+    {
+      "Label": "ProjectName",
+      "Value": "cypress-tests"
+    },
+    {
+      "Label": "FQDN",
+      "Value": "cypress-fqdn"
+    },
+    {
+      "Label": "PermissionsBoundaryArn",
+      "Value": "cypress-pbarn"
+    },
+    {
+      "Label": "RolePath",
+      "Value": "cypress-rp"
+    },
+    {
+      "Label": "QSS3BucketName",
+      "Value": "aws-quickstart"
+    },
+    {
+      "Label": "QSS3BucketPrefix",
+      "Value": "quickstart-nasa-jpl-cubs/"
+    },
+    {
+      "Label": "QSS3BucketRegion",
+      "Value": "us-east-1"
+    },
+    {
+      "Label": "HostedZoneID",
+      "Value": "cypress-hzid"
+    },
+    {
+      "Label": "AvailabilityZones",
+      "Value": "cypress-1a,cypress-1b,cypress-1c"
+    },
+    {
+      "Label": "VPCCIDR",
+      "Value": "10.0.0.0/16"
+    },
+    {
+      "Label": "PrivateSubnet1ACIDR",
+      "Value": "10.0.128.0/24"
+    },
+    {
+      "Label": "PrivateSubnet2ACIDR",
+      "Value": "10.0.192.0/24"
+    },
+    {
+      "Label": "PrivateSubnet3ACIDR",
+      "Value": "10.0.200.0/24"
+    },
+    {
+      "Label": "RemoteAccessCIDR",
+      "Value": "10.0.123.0/24"
+    },
+    {
+      "Label": "PublicSubnet1ACIDR",
+      "Value": "10.0.32.0/24"
+    },
+    {
+      "Label": "PublicSubnet2ACIDR",
+      "Value": "10.0.64.0/24"
+    },
+    {
+      "Label": "PublicSubnet3ACIDR",
+      "Value": "10.0.70.0/24"
+    }
+  ]
+}

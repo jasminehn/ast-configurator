@@ -1,0 +1,53 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 4px 8px 4px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.disabled {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 8px 8px 8px;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+
+.label {
+    padding-left: 8px;
+}
+
+.disabled p {
+    padding: 0px 0px 0px 0px
+}
+
+.wrapper p {
+    padding: 0px 0px 0px 0px
+}
+
+.checked {
+    padding-right: 0px;
+}
+
+.unchecked {
+    padding-right: 0px;
+}
+
+.checked path {
+    fill: #7191D1;
+    transition: fill 0.5s;
+}
+
+.unchecked path {
+    fill: #A6A6A6;
+    transition: fill 0.5s;
+}
+
+.wrapper:hover path { 
+    transition: fill 0.5s;
+    fill: #7191D1; 
+}

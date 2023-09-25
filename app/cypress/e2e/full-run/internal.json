@@ -1,0 +1,88 @@
+{
+  "Questions": [
+    {
+      "Label": "UseRoute53",
+      "Value": "true"
+    },
+    {
+      "Label": "DeployIam",
+      "Value": "false"
+    },
+    {
+      "Label": "DeployLoggings",
+      "Value": "true"
+    },
+    {
+      "Label": "DeployBastion",
+      "Value": "true"
+    },
+    {
+      "Label": "EnableEfsBackups",
+      "Value": "true"
+    },
+    {
+      "Label": "DeployVpc",
+      "Value": "false"
+    },
+    {
+      "Label": "ProjectName",
+      "Value": "cypress-tests"
+    },
+    {
+      "Label": "FQDN",
+      "Value": "cypress-fqdn"
+    },
+    {
+      "Label": "QSS3BucketName",
+      "Value": "aws-quickstart"
+    },
+    {
+      "Label": "QSS3BucketPrefix",
+      "Value": "quickstart-nasa-jpl-cubs/"
+    },
+    {
+      "Label": "QSS3BucketRegion",
+      "Value": "us-east-1"
+    },
+    {
+      "Label": "AITInstanceType",
+      "Value": "m5.large"
+    },
+    {
+      "Label": "CloudWatchLogsRetentionPeriod",
+      "Value": "30"
+    },
+    {
+      "Label": "KeyPairName",
+      "Value": "cypress-kpn2"
+    },
+    {
+      "Label": "HostedZoneID",
+      "Value": "cypress-hzid"
+    },
+    {
+      "Label": "AccessSgID",
+      "Value": "cypress-asi"
+    },
+    {
+      "Label": "VpcId",
+      "Value": "cypress-vpcid"
+    },
+    {
+      "Label": "PrivateSubnet1CIDR",
+      "Value": "10.0.128.0/24"
+    },
+    {
+      "Label": "PrivateSubnet2CIDR",
+      "Value": "10.0.192.0/24"
+    },
+    {
+      "Label": "PrivateSubnet3CIDR",
+      "Value": "10.0.200.0/24"
+    },
+    {
+      "Label": "RemoteAccessCIDR",
+      "Value": "10.0.123.0/24"
+    }
+  ]
+}
